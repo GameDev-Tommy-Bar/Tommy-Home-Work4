@@ -10,13 +10,11 @@ public class MoverLeft : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
         velocity = velocity * Random.Range(1,5);
     }
     void Update() {
         transform.position += velocity * Time.deltaTime;
     }
-
     public void SetVelocity(Vector3 newVelocity) {
         this.velocity = newVelocity;
     }

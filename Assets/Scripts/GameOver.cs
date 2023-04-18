@@ -11,7 +11,7 @@ public class GameOver : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other) {
    
-           Debug.Log("other = "+ other.tag + "this = " + this.tag);
+          // Debug.Log("other = "+ other.tag + "this = " + this.tag);
          if (other.tag == triggeringTag && enabled) {
            
             

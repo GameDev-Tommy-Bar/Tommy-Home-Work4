@@ -11,15 +11,11 @@ public class Destroycode : MonoBehaviour {
   
     
     private void OnTriggerEnter2D(Collider2D other) {
-   
-           Debug.Log("other = "+ other.tag + "this = " + this.tag);
-         if (other.tag == triggeringTag && enabled) {
-           
-            
-            Destroy(this.gameObject);
+        //   Debug.Log("other = "+ other.tag + "this = " + this.tag);
+      if (other.tag == triggeringTag && enabled) {  
+          Destroy(this.gameObject);
            // Destroy(other.gameObject);
-             }  
-          
+             }   
     }
     
 

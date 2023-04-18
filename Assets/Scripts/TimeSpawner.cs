@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TimeSpawner : MonoBehaviour
 {
-   [SerializeField] MoverLeft prefabToSpawn;
+    [SerializeField] MoverLeft prefabToSpawn;
     [SerializeField] Vector3 velocityOfSpawnedObject;
     [SerializeField] float secondsBetweenSpawns = 1f;
  

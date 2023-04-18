@@ -9,8 +9,8 @@ public class Mover : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-            pos_up_down = new Vector3(0,0.09f,0);
-            pos_right_left = new Vector3(0.09f,0,0);
+        pos_up_down = new Vector3(0,0.09f,0);
+        pos_right_left = new Vector3(0.09f,0,0);
     }
 
     // Update is called once per frame
