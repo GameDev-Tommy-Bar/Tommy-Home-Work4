@@ -4,26 +4,35 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    Vector3 pos_up_down;
-    Vector3 pos_right_left;
-    // Start is called before the first frame update
- void Start() {
-    pos_up_down = new Vector3(0,0.09f,0);
-    pos_right_left = new Vector3(0.09f,0,0);
- }
-    // Update is called once per frame
- void Update() {
-    if (Input.GetKey(KeyCode.UpArrow)) {
-     GetComponent<Transform>().position += pos_up_down;
+    private Vector3 posUpDown;
+    private Vector3 posRightLeft;
+
+    void Start()
+    {
+        posUpDown = new Vector3(0, 0.09f, 0);
+        posRightLeft = new Vector3(0.09f, 0, 0);
     }
-    if (Input.GetKey(KeyCode.DownArrow)) {
-     GetComponent<Transform>().position -= pos_up_down;
+
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.position += posUpDown;
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.position -= posUpDown;
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.position += posRightLeft;
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.position -= posRightLeft;
+        }
     }
-    if (Input.GetKey(KeyCode.RightArrow)) {
-     GetComponent<Transform>().position += pos_right_left;
-    }
-    if (Input.GetKey(KeyCode.LeftArrow)) {
-     GetComponent<Transform>().position -= pos_right_left;
-    }
- }
 }
