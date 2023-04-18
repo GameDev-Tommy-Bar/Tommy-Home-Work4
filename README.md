@@ -1,2 +1,2 @@
 # Tommy-Home-Work4
-the game https://tommy-bar.itch.io/spaceshipwithpower
+the game [view](https://tommy-bar.itch.io/spaceshipwithpower)
