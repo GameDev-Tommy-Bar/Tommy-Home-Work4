@@ -12,17 +12,17 @@ public class Mover : MonoBehaviour
         pos_right_left = new Vector3(0.09f,0,0);
     }
     // Update is called once per frame
-    void Update(){
-        if (Input.GetKey(KeyCode.UpArrow)){
+    void Update() {
+        if(Input.GetKey(KeyCode.UpArrow)){
             GetComponent<Transform>().position += pos_up_down;
-            }
-        if (Input.GetKey(KeyCode.DownArrow)){
+        }
+        if(Input.GetKey(KeyCode.DownArrow)){
             GetComponent<Transform>().position -= pos_up_down;}
-        if (Input.GetKey(KeyCode.RightArrow)){
+        if(Input.GetKey(KeyCode.RightArrow)){
             GetComponent<Transform>().position += pos_right_left;
-            }
-        if (Input.GetKey(KeyCode.LeftArrow)){
+        }
+        if(Input.GetKey(KeyCode.LeftArrow)){
             GetComponent<Transform>().position -= pos_right_left;
-            }
+        }
     }
 }
